@@ -40,7 +40,7 @@ export default class Profile extends Component {
           <ProfileStat value={user.following} label="following" />
         </section>
         <section className="orgs">
-          <h4>Organizations</h4>
+          <h4>Organizations-test</h4>
           {orgs.map(org => (
             <img
               key={org.id}

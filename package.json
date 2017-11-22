@@ -4,7 +4,7 @@
   "description": "Simple React example app",
   "main": "index.js",
   "scripts": {
-    "dev": "webpack-dev-server --inline --content-base ./ --env.dev",
+    "start": "webpack-dev-server --progress --color --hot -env.development --config tools/webpack.js",
     "build": "webpack --env.prod",
     "lint": "eslint app test",
     "test": "cross-env NODE_ENV=test nyc mocha",
@@ -25,11 +25,12 @@
   "homepage": "https://github.com/mzabriskie/react-example",
   "dependencies": {
     "axios": "0.13.1",
+    "babel": "^6.23.0",
     "bootstrap": "^3.3.5",
     "history": "^3.0.0",
     "moment": "^2.10.6",
-    "react": "15.3.0",
-    "react-dom": "15.3.0",
+    "react": "^15.3.0",
+    "react-dom": "^15.3.0",
     "react-router": "2.6.1",
     "react-tooltip": "3.1.5"
   },
@@ -61,10 +62,10 @@
     "sinon-chai": "2.8.0",
     "starwars-names": "1.6.0",
     "style-loader": "^0.13.0",
-    "webpack": "2.1.0-beta.20",
-    "webpack-config-utils": "2.0.0",
-    "webpack-dev-server": "2.1.0-beta.0",
-    "webpack-validator": "2.2.7"
+    "webpack": "^3.8.1",
+    "webpack-config-utils": "^2.0.0",
+    "webpack-dev-server": "^2.9.4",
+    "webpack-validator": "^2.2.7"
   },
   "nyc": {
     "all": true,
